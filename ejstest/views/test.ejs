@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .wrap{
+            width:80%;
+            margin:50px auto;
+            display:flex;
+            flex-wrap: wrap;
+        }
+        .row{
+            width:100%;
+            display: flex;
+        }
+        .row:nth-of-type(2n+1){
+            margin-right: 2.4%;
+        }
+        .row:nth-of-type(2n){
+            margin-left:2.5%;
+        }
+        .hex{
+            width:8%;
+            margin-bottom: 0.5%;
+            position:relative;
+            visibility: hidden;
+        }
+        /* .hex:nth-of-type(7n+5){
+            margin-left:12.5%;
+        } */
+        .hex:after{
+            content:'';
+            display:block;
+            padding-bottom: 80%;
+        }
+        .hex-inner{
+            position:absolute;
+            width:98%;
+            padding-bottom:115%;
+            overflow: hidden;
+            visibility: hidden;
+            transform: rotate3d(0,0,1,-60deg) skewY(30deg);
+        }
+        .hex-inner *{
+            position:absolute;
+            visibility: visible;
+        }
+        .content{
+            display: flex;
+            width:98.5%;
+            height:98.5%;
+            overflow: hidden;
+            transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+            background-color: #0080FF;
+            justify-content: center;
+            align-items: center;
+            color:white;
+        }
+        .content p{
+            font-size:1vw;
+            text-align: center;
+        }
+
+        .content:hover{
+            background-color:orange;
+            color:black;
+            cursor:pointer;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class = "wrap">
+        <% 
+        var colnum = 20
+        var rownum = 12
+        for(var i=0;i<rownum;i++){ %>
+
+        <div class = "row">
+            <% for(var j=0;j<colnum;j++){ %>
+                <div class= "hex">
+                    <div class = "hex-inner" >
+                        <div class="content" id = "hex<%=i*colnum+j+1%>">
+                            <p><%=i*colnum+1+j%></p>
+                        </div>                    
+                    </div>
+                </div> 
+            <% } %>
+        </div>
+    <%}%>
+
+    </div>
+
+    <script>
+
+        $("div[class='content']").click(function(){
+            console.log($(this).attr('style'))
+            if($(this).attr('style') == null || $(this).attr('style')==""){
+                $(this).attr('style',"background-color:green");
+            }
+            else if($(this).attr('style')=='background-color:green'){
+                $(this).attr('style',"background-color:red");
+            }
+            else if($(this).attr('style')=='background-color:red'){
+                $(this).attr('style',"background-color:yellow");
+            }
+            else if($(this).attr('style')=='background-color:yellow'){
+                $(this).attr('style',"background-color:pink");
+            }
+            else if($(this).attr('style')=='background-color:pink'){
+                $(this).attr('style',"background-color:violet");
+            }
+            else if($(this).attr('style')=='background-color:violet'){
+                $(this).attr('style',"background-color:black");
+            }
+            else if($(this).attr('style')=='background-color:black'){
+                $(this).attr('style',"background-color:blue");
+            }
+            else if($(this).attr('style')=='background-color:blue'){
+                $(this).attr('style',"background-color:beige");
+            }
+            else if($(this).attr('style')=='background-color:beige'){
+                $(this).attr('style',"");
+            }
+
+
+
+
+        });
+
+    </script>
+
+</body>
+</html>
