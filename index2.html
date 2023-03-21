@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box2 {
+        margin-top: 600px;
+        background-color: aqua;
+      }
+      .box {
+        margin-top: 600px;
+        margin-bottom: 600px;
+        height: 100px;
+        width: 100px;
+        background-color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box2"></div>
+    <div class="box1">
+      <div class="box a">a</div>
+      <div class="box b">b</div>
+      <% for (let i = 0; i < 10; i++) { %>
+      <div class="box c">d</div>
+      <% } %>
+    </div>
+    <div class="box c">c</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>

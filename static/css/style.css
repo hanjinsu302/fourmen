@@ -1,0 +1,82 @@
+.box_row {
+  background-color: blueviolet;
+  width: 5vw;
+  height: 5vw;
+  border: 1px solid black;
+  text-align: center;
+  border-radius: 50%;
+}
+
+/* .box_col {
+  display: flex;
+} */
+
+.hidden {
+  display: flex;
+  justify-content: center;
+}
+
+.title,
+.end {
+  margin-bottom: 100vh;
+}
+
+.test {
+  width: 300px;
+  height: 300px;
+  background-color: aquamarine;
+}
+
+.row19 {
+  background-color: yellow;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition: all 1s;
+}
+.hidden2 {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+  display: flex;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.map {
+  background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Pacific_Ocean_laea_relief_location_map.jpg/400px-Pacific_Ocean_laea_relief_location_map.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.d {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition: all 1s;
+}
+
+.container {
+  display: flex;
+}
+/* div:nth-child(even) {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition: all 1.5s;
+} */
+
+/* .hidden:nth-child(odd) {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1.5s;
+} */
