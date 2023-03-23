@@ -57,6 +57,16 @@ app.get('/index/contact', function(req,res){
 
 })
 
+app.get('/tottenum', function(req, res) {
+    res.render('tottenum');
+})
+
+app.get('/index/tottenum', function(req,res){
+
+    res.render('tottenum.ejs');
+
+})
+
 
 
 app.listen(port,()=>{
