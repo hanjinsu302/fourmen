@@ -8,23 +8,40 @@
 
 <body>
 
+  <header class="site-navbar py-4" role="banner">
+
+    <%- include('header') %>
+
+  </header>
   <div class="site-wrap">
 
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <!-- <div id="background-video" style="width:100%;height:auto;">
+    </div> -->
 
 
 
-    <header class="site-navbar py-4" role="banner">
-
-      <%- include('header') %>
-
-    </header>
-
-    <div class="hero overlay" style="background-image: url('/static/images/bg_3.jpg');">
-      <div class="container">
+    <div class="hero overlay">
+      <div class="bg-video" id="background-video">
+        <video volumne = "1" style="z-index: -1; width:100%; height:100%;"class="bg-video__content" autoplay muted loop>
+        <source src="/static/images/bg_1.mp4" type="video/mp4">
+        Something Problem!
+      </video>
+      </div>
+      
+      <div class="container" style="z-index:2">
         <div class="row align-items-center">
           <div class="col-lg-5 ml-auto">
-            <h1 class="text-white">World Cup Event</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, molestias repudiandae pariatur.</p>
+            <h1 class="text-white">Premier Leage</h1>
+            <p>Get ready for the start of the 2023-2024 Preimier Leage</p>
             <div id="date-countdown"></div>
             <p>
               <a href="#" class="btn btn-primary py-3 px-4 mr-3">Book Ticket</a>

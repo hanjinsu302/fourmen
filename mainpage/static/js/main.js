@@ -253,7 +253,7 @@ jQuery(document).ready(function($) {
 
 	var siteCountDown = function() {
 
-		$('#date-countdown, #date-countdown2').countdown('2033/10/10', function(event) {
+		$('#date-countdown, #date-countdown2').countdown('2023/8/12', function(event) {
 		  var $this = $(this).html(event.strftime(''
 		    + '<span class="countdown-block"><span class="label">%w</span> weeks </span>'
 		    + '<span class="countdown-block"><span class="label">%d</span> days </span>'
@@ -316,9 +316,10 @@ jQuery(document).ready(function($) {
   };
 	siteScroll();
 	
-
-	$(function () {
-		$("#bgndVideo").YTPlayer();
-	});
+	
+	$("document").ready(function() {
+		var player = document.getElementById('background-video');
+		player.volume =20;
+	  }); 
 
 });
