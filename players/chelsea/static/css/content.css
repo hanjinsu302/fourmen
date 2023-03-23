@@ -1,0 +1,391 @@
+.body_player {
+  background-color: #131325;
+  height: 2000px;
+}
+
+.flex-row {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-flow: column;
+}
+
+.center {
+  align-items: center;
+  position: absolute;
+  top: 1000px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.list {
+  border-radius: 3px;
+  overflow: hidden;
+}
+.list .card {
+  min-width: 550px;
+  margin-bottom: 10px;
+  perspective: 600px;
+  transition: all 0.1s;
+  background-color: #212140;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  height: 90px;
+}
+.list .card .bottom {
+  height: 0px;
+  overflow: hidden;
+  width: 200px;
+  font-size: 12px;
+  color: #777;
+  font-weight: normal;
+}
+.list .card.open {
+  padding: 30px;
+  height: auto;
+}
+.list .card.open .bottom {
+  margin-top: 10px;
+  height: 100%;
+  overflow: visible;
+}
+.list .card.open .player {
+  animation: playerTurn 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  /* transform: rotateY(180deg);
+  transition-duration: 1s; */
+  box-shadow: -10px 10px 10px 2px rgba(0, 0, 0, 0.2), -2px 0px 0px 0px #888;
+  transition: all 0.5s;
+  transition-delay: 0.05s;
+}
+.list .card.open .info {
+  transform: translate(0, -10px);
+}
+.list .card.open .members {
+  padding: 15px 20px;
+  border-radius: 4px;
+  align-self: flex-start;
+}
+.list .card button.view {
+  cursor: pointer;
+  color: #ccc;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background-color: #1ea94b;
+  padding: 15px 20px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  transition: all 0.1s;
+}
+.list .card button.view:hover {
+  box-shadow: 0px 15px 20px -5px rgba(0, 0, 0, 0.3);
+  transform: translate(0, -2px);
+}
+.list .card .player {
+  transition: all 0.5s;
+  width: 120px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+.list .card .info {
+  transition: all 0.2s;
+  min-width: 200px;
+  padding: 0px 30px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  position: relative;
+}
+.list .card .info .name {
+  position: relative;
+  font-size: 1em;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.list .card .info .team {
+  position: relative;
+  font-size: 12px;
+  font-weight: normal;
+  color: #888;
+}
+.list .card .info .position {
+  position: relative;
+  top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.list .card .backNumber .number {
+  position: relative;
+  top: 57px;
+  right: 225px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.list .card.open .backNumber .number {
+  position: relative;
+  top: 57px;
+  right: 225px;
+  font-weight: bold;
+  color: #fff;
+  transform: scale(2);
+  animation: biggerNumber 1s;
+}
+.list .card .group {
+  margin-left: auto;
+}
+.list .card .members {
+  transition: all 0.1s;
+  padding: 40px;
+  font-family: "Montserrat";
+  color: #ccc;
+  background-color: #1c1c36;
+}
+.list .card .members .current {
+  font-weight: bold;
+  margin-right: 10px;
+}
+.list .card .members .max {
+  opacity: 0.5;
+  margin-left: 10px;
+}
+
+/* 그래프 */
+.graph {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+}
+.graph canvas {
+  width: 100%;
+  position: relative;
+  bottom: 20px;
+}
+.graph .average {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* 팝업 창 */
+html.modal-active,
+body.modal-active {
+  overflow: hidden;
+}
+#modal-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: table;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  transform: scale(0);
+}
+#modal-container .modal-background {
+  display: table-cell;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  vertical-align: middle;
+}
+#modal-container .modal-background .modal {
+  background-color: #212140;
+  color: white;
+  padding: 15px;
+  display: inline-block;
+  border-radius: 3px;
+  position: relative;
+  border-radius: 15px;
+  height: 700px;
+  width: 400px;
+}
+#modal-container .modal-background .modal .head {
+  display: flex;
+  position: relative;
+}
+#modal-container .modal-background .modal .close {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#modal-container .modal-background .modal .close:hover {
+  cursor: pointer;
+  transform: rotate(180deg);
+  transition-duration: 1.5s;
+}
+#modal-container .modal-background .modal .close i {
+}
+#modal-container .modal-background .modal .btn {
+  position: relative;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  left: 80px;
+  bottom: 10px;
+}
+#modal-container .modal-background .modal .btn .info-btn {
+  border-radius: 15px;
+  width: 80px;
+  height: 20px;
+  background-color: #07070e;
+  border-color: #07070e;
+  color: white;
+}
+
+#modal-container .modal-background .modal .btn .career-btn {
+  border-radius: 15px;
+  width: 80px;
+  height: 20px;
+  background-color: #212140;
+  border: 1px solid white;
+  cursor: pointer;
+  color: white;
+}
+#modal-container .modal-background .modal .btn .career-btn:hover {
+  background-color: #07070e;
+  border-color: #07070e;
+}
+
+/* Revealing Animation*/
+#modal-container.act {
+  transform: scale(1);
+}
+#modal-container.act .modal-background {
+  background: transparent;
+  animation: fadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container.act .modal-background .modal {
+  /* 콘텐츠를 초기에 보여주지 않음 */
+  opacity: 0;
+  animation: scaleUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+#modal-container.act.out {
+  animation: quickScaleDown 0s 0.5s linear forwards;
+}
+#modal-container.act.out .modal-background {
+  animation: fadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+#modal-container.act.out .modal-background .modal {
+  animation: scaleDown 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    background: transparent;
+  }
+  100% {
+    background: rgba(0, 0, 0, 0.7);
+  }
+}
+/* Show modal content from bottom to top */
+@keyframes scaleUp {
+  0% {
+    /* 모달 콘텐츠를 하단에 위치시킴 */
+    transform: scale(0.8) translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    /* 모달 콘텐츠를 본래 위치로 돌려놓음 */
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+/* Shrink content */
+@keyframes scaleBack {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+/* Hide modal container*/
+@keyframes quickScaleDown {
+  0% {
+    transform: scale(1);
+  }
+  99.9% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+/* Dimmed hiding */
+@keyframes fadeOut {
+  0% {
+    background: rgba(0, 0, 0, 0.7);
+  }
+  100% {
+    background: transparent;
+  }
+}
+/* modal content from top to bottom */
+@keyframes scaleDown {
+  0% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.8) translateY(1000px);
+    opacity: 0;
+  }
+}
+
+@keyframes scaleBack {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.85);
+  }
+}
+@keyframes scaleForward {
+  0% {
+    transform: scale(0.85);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes biggerNumber {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2);
+  }
+}
+
+@keyframes playerTurn {
+  0% {
+    transform: rotateY(0deg);
+  }
+  25% {
+    transform: rotateY(90deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  75% {
+    transform: rotateY(270deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
