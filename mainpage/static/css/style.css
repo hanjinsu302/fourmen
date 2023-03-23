@@ -1117,3 +1117,20 @@ h1, h2, h3, h4, h5,
   .post-meta a {
     color: #fff;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+
+    
+    .bg-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      opacity: 1;
+    
+      object-fit: fill;
+    }
+
+    .bg-video__content{
+      object-fit:fill;
+    }
