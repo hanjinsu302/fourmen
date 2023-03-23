@@ -22,7 +22,7 @@ body .pages_page {
 }
 
 .overlay {
-  background: rgba(255, 155, 0, 0.7019607843);
+  background: rgba(82, 75, 65, 0.702);
   position: fixed;
   width: 100%;
   pointer-events: none;
@@ -3270,19 +3270,19 @@ body .pages_page:nth-of-type(odd) .pages_page__inner {
 body .pages_page:nth-of-type(1) .pages_page__inner {
   background-size: 880px !important;
   background-position: center !important;
-  background: url("https://cdn.kado.net/news/photo/202205/1126578_551831_5436.jpg");
+  background: url("https://img.chelseafc.com//image/upload/f_auto,c_fill,g_faces,w_1440,h_856,q_90/editorial/match-reports/2022-23/Leeds%20home/fofana-celebs-leeds-h.jpg");
 }
 body .pages_page:nth-of-type(2) .pages_page__inner {
   background-size: 870px !important;
   background-position: center !important;
-  background: url("https://i.pinimg.com/564x/62/19/3b/62193bd8489017848ef73319dbba9d02.jpg");
+  background: url("https://img.chelseafc.com//image/upload/f_auto,c_fill,g_faces,w_1440,h_856,q_90/editorial/match-reports/2022-23/Dortmund%20home/james-shirt-dortmund-dressing-room.jpg");
 }
 body .pages_page:nth-of-type(2) .pages_page__inner h4 {
   color: black;
   z-index: 3;
 }
 body .pages_page:nth-of-type(3) .pages_page__inner {
-  background: url(https://cdne-totv8-prod-southeastasia.azureedge.net/media/we1mp4rx/rangers_4.jpg?mode=crop&quality=100&width=1600);
+  background: url("https://img.chelseafc.com//image/upload/f_auto,c_fill,g_faces,w_1440,h_856,q_90/The%205th%20Stand%20app%20editorial/Match%20action/Dortmund%20(H)/GettyImages-1471956928.jpg");
   background-position: 0 0;
 }
 body .pages_page:nth-of-type(3) .pages_page__inner .content {
@@ -3294,7 +3294,7 @@ body .pages_page:nth-of-type(3) .pages_page__inner .content {
   position: absolute;
 }
 body .pages_page:nth-of-type(6) .pages_page__inner {
-  background: #4a5f5c;
+  background: #4a4c5f;
 }
 body .pages_page:nth-of-type(4) .pages_page__inner .content {
   -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%);
@@ -3310,17 +3310,17 @@ body .pages_page:nth-of-type(4) .pages_page__inner .bg {
   height: 100%;
   width: 200%;
   position: relative;
-  background: url(https://cdne-totv8-prod-southeastasia.azureedge.net/media/we1mp4rx/rangers_4.jpg?mode=crop&quality=100&width=1600);
+  background: url("https://img.chelseafc.com//image/upload/f_auto,c_fill,g_faces,w_1440,h_856,q_90/The%205th%20Stand%20app%20editorial/Match%20action/Dortmund%20(H)/GettyImages-1471956928.jpg");
   background-size: 1400px !important;
   left: -100%;
 }
 body .pages_page:nth-of-type(5) .pages_page__inner {
-  background: url("http://cdn.lightgalleries.net/4d80d92265da9/images/Tayna16-12_90574-2.jpg");
+  background: url("https://img.chelseafc.com//image/upload/f_auto,c_fill,g_faces,w_1440,h_856,q_90/The%205th%20Stand%20app%20editorial/Training%20galleries/2023/February/22%20Feb/DAZ_7014.jpg");
   background-size: 870px !important;
   background-position: center !important;
 }
 body .pages_page:nth-of-type(7) .pages_page__inner {
-  background: url("http://ruthrose.co.uk/wp-content/uploads/2018/04/lingerie-fashion-photographer-photography-shoot-fitness-swimwear-shoot180317_POCKET9661-f1.jpg");
+  background: url("https://img.chelseafc.com//image/upload/f_auto,c_fill,g_faces,w_1440,h_856,q_90/editorial/news/2023/02/24/Thiago_Silva_celebration_Spurs_away_21_22.jpg");
   background-position: 0 0;
   background-size: 1400px !important;
 }
@@ -3362,7 +3362,7 @@ body
   width: 260px;
 }
 body .pages_page:nth-of-type(8) .pages_page__inner {
-  background: url("http://ruthrose.co.uk/wp-content/uploads/2018/04/lingerie-fashion-photographer-photography-shoot-fitness-swimwear-shoot180317_POCKET9661-f1.jpg");
+  background: url("https://img.chelseafc.com//image/upload/f_auto,c_fill,g_faces,w_1440,h_856,q_90/editorial/news/2023/02/24/Thiago_Silva_celebration_Spurs_away_21_22.jpg");
   background-position: 0 0;
 }
 body .pages_page:nth-of-type(8) .pages_page__inner .content {
@@ -3379,7 +3379,7 @@ body .pages_page:nth-of-type(8) .pages_page__inner .bg {
   height: 100%;
   width: 200%;
   position: relative;
-  background: url("http://ruthrose.co.uk/wp-content/uploads/2018/04/lingerie-fashion-photographer-photography-shoot-fitness-swimwear-shoot180317_POCKET9661-f1.jpg");
+  background: url("https://img.chelseafc.com//image/upload/f_auto,c_fill,g_faces,w_1440,h_856,q_90/editorial/news/2023/02/24/Thiago_Silva_celebration_Spurs_away_21_22.jpg");
   background-size: 1400px !important;
   left: -100%;
 }
