@@ -41,12 +41,17 @@
   height: 90px;
 }
 .list .card .career {
+  display: none;
+}
+.list .card.open .career {
   position: relative;
-  right: 50px;
+  top: 20px;
+  right: 20px;
+  display: block;
 }
-.list .card .career h2 {
+.list .card .career ul {
 }
-.list .card .career p {
+.list .card .career li {
   color: gray;
 }
 .list .card .bottom {
