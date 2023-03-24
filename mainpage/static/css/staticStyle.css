@@ -520,7 +520,7 @@
 
 .whole {
   position: absolute;
-  margin: 10vh 30%;
+  margin: 20vh 30%;
   /* text-align: center; */
 }
 
@@ -535,7 +535,7 @@
   /* display: grid; */
   /* place-items: center; */
   /* align-content: center; */
-  min-height: 50vh;
+  min-height: 40vh;
 }
 
 .hidden {
@@ -549,7 +549,15 @@
 .hidden1 {
   opacity: 0;
   filter: blur(5px);
-  transform: translateX(0%);
+  transform: translateX(90%);
+  transition: all 3s;
+  /* display: flex; */
+}
+
+.logo321 {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(50%);
   transition: all 3s;
   /* display: flex; */
 }
@@ -564,7 +572,7 @@
   width: 50vw;
   text-align: right;
   position: right;
-  margin: -10% 0;
+  margin: -20% 0;
   /* top: 30vhh; */
 }
 
@@ -579,8 +587,13 @@
 .card {
   background-color: none;
   top: -7.1vw;
+  border: 0;
 }
 
 .gogo {
   margin-bottom: 30vw;
+}
+
+.logo321 {
+  width: 5vw;
 }
