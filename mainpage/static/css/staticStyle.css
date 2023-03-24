@@ -1,0 +1,586 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+.back1 {
+  background-color: #222832;
+}
+
+.tatics1 {
+  color: white;
+  font-weight: bolder;
+
+  background-image: linear-gradient(to right, blue, skyblue);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.body1 {
+  border: 1px solid black;
+  display: flex;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.strategy {
+  position: relative;
+  width: 30%;
+  transform: perspective(900px) rotateX(45deg);
+  height: 30%;
+  top: 1vw;
+  z-index: 0;
+}
+
+.player-main {
+  margin-top: 10vw;
+  position: absolute;
+  width: 8vw;
+  height: 8vw;
+  z-index: 3;
+}
+
+.img1 {
+  top: 7vw;
+  left: 46vw;
+}
+
+.img2 {
+  left: 46vw;
+  top: 15vw;
+}
+
+.img3 {
+  left: 35vw;
+  top: 15vw;
+}
+
+.img4 {
+  left: 57vw;
+  top: 15vw;
+}
+
+.img5 {
+  left: 34vw;
+  top: 25vw;
+}
+
+.img6 {
+  left: 42vw;
+  top: 25vw;
+}
+
+.img7 {
+  left: 50vw;
+  top: 25vw;
+}
+
+.img8 {
+  left: 58vw;
+  top: 25vw;
+}
+
+.img9 {
+  left: 57vw;
+  top: 35vw;
+}
+
+.img10 {
+  left: 46vw;
+  top: 35vw;
+}
+
+.img11 {
+  left: 35vw;
+  top: 35vw;
+}
+
+.img1:hover {
+  transform: scale(2);
+}
+.img1 {
+  transition: all 0.2s linear;
+}
+
+.img2:hover {
+  transform: scale(2);
+}
+.img2 {
+  transition: all 0.2s linear;
+}
+
+.img3:hover {
+  transform: scale(2);
+}
+.img3 {
+  transition: all 0.2s linear;
+}
+
+.img4:hover {
+  transform: scale(2);
+}
+.img4 {
+  transition: all 0.2s linear;
+}
+
+.img5:hover {
+  transform: scale(2);
+}
+.img5 {
+  transition: all 0.2s linear;
+}
+
+.img6:hover {
+  transform: scale(2);
+}
+.img6 {
+  transition: all 0.2s linear;
+}
+
+.img7:hover {
+  transform: scale(2);
+}
+.img7 {
+  transition: all 0.2s linear;
+}
+
+.img8:hover {
+  transform: scale(2);
+}
+.img8 {
+  transition: all 0.2s linear;
+}
+
+.img9:hover {
+  transform: scale(2);
+}
+.img9 {
+  transition: all 0.2s linear;
+}
+
+.img10:hover {
+  transform: scale(2);
+}
+.img10 {
+  transition: all 0.2s linear;
+}
+
+.img11:hover {
+  transform: scale(2);
+}
+.img11 {
+  transition: all 0.2s linear;
+}
+
+.box {
+  /* position: ab; */
+  transition: 0.4s;
+  transform-style: preserve-3d;
+  text-align: center;
+}
+
+/* body {
+  margin: 0;
+} */
+
+.whole {
+  position: absolute;
+  margin: 50px 50px;
+  text-align: center;
+}
+
+.ball1 {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  top: 230px;
+  left: 657px;
+  animation-name: moveball;
+}
+
+@keyframes moveball {
+  0% {
+    top: 230px;
+    left: 657px;
+  }
+
+  20% {
+    top: 230px;
+    left: 350px;
+  }
+
+  20% {
+    top: 230px;
+    left: 530px;
+  }
+
+  30% {
+    top: 280px;
+    left: 450px;
+  }
+
+  40% {
+    top: 330px;
+    left: 180px;
+  }
+
+  50% {
+    top: 230px;
+    left: 100px;
+  }
+
+  80% {
+    top: 230px;
+    left: 20px;
+  }
+
+  100% {
+    top: 230px;
+    left: 340px;
+  }
+}
+
+.ball {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.playerA > div {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  color: black;
+  text-align: center;
+  background-color: yellow;
+  border-radius: 50%;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  color: yellow;
+}
+
+/* .playerA > .player1 {
+  background-color: red;
+} */
+
+.playerB > div {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  /* background-color: red; */
+  border-radius: 50%;
+  animation-duration: 3s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+}
+
+.player1 {
+  position: absolute;
+  top: 230px;
+  left: 657px;
+  animation-name: move1;
+}
+
+.player2 {
+  position: absolute;
+  top: 130px;
+  left: 550px;
+  animation-name: move2;
+}
+
+@keyframes move2 {
+  0% {
+    top: 130px;
+    left: 550px;
+  }
+
+  50% {
+    top: 130px;
+    left: 450px;
+  }
+}
+
+.player3 {
+  position: absolute;
+  top: 230px;
+  left: 550px;
+  animation-name: move3;
+}
+
+@keyframes move3 {
+  0% {
+    top: 230px;
+    left: 550px;
+  }
+
+  90% {
+    top: 230px;
+    left: 450px;
+  }
+}
+
+.player4 {
+  position: absolute;
+  top: 330px;
+  left: 550px;
+  animation-name: move4;
+}
+
+@keyframes move4 {
+  0% {
+    top: 330px;
+    left: 550px;
+  }
+
+  90% {
+    top: 330px;
+    left: 450px;
+  }
+}
+
+.player5 {
+  position: absolute;
+  top: 70px;
+  left: 470px;
+  animation-name: move5;
+}
+
+@keyframes move5 {
+  0% {
+    top: 70px;
+    left: 470px;
+  }
+
+  80% {
+    top: 70px;
+    left: 200px;
+  }
+}
+
+.player6 {
+  position: absolute;
+  top: 170px;
+  left: 470px;
+  animation-name: move6;
+}
+
+@keyframes move6 {
+  0% {
+    top: 170px;
+    left: 470px;
+  }
+
+  80% {
+    top: 170px;
+    left: 370px;
+  }
+}
+
+.player7 {
+  position: absolute;
+  top: 280px;
+  left: 470px;
+  animation-name: move7;
+}
+
+@keyframes move7 {
+  0% {
+    top: 280px;
+    left: 470px;
+  }
+
+  70% {
+    top: 280px;
+    left: 420px;
+  }
+  80% {
+    top: 280px;
+    left: 450px;
+  }
+}
+
+.player8 {
+  position: absolute;
+  top: 380px;
+  left: 470px;
+  animation-name: move8;
+}
+
+@keyframes move8 {
+  0% {
+    top: 380px;
+    left: 470px;
+  }
+
+  80% {
+    top: 380px;
+    left: 270px;
+  }
+}
+
+.player9 {
+  position: absolute;
+  top: 130px;
+  left: 390px;
+  animation-name: move9;
+}
+
+@keyframes move9 {
+  0% {
+    top: 130px;
+    left: 390px;
+  }
+
+  50% {
+    top: 130px;
+    left: 290px;
+  }
+}
+
+.player10 {
+  position: absolute;
+  top: 230px;
+  left: 340px;
+  animation-name: move10;
+}
+
+@keyframes move10 {
+  0% {
+    top: 230px;
+    left: 340px;
+  }
+
+  70% {
+    top: 230px;
+    left: 100px;
+  }
+}
+
+.player11 {
+  position: absolute;
+  top: 330px;
+  left: 390px;
+  animation-name: move11;
+}
+
+@keyframes move11 {
+  0% {
+    top: 330px;
+    left: 390px;
+  }
+
+  60% {
+    top: 330px;
+    left: 190px;
+  }
+}
+
+.whole {
+  top: 60vw;
+  position: absolute;
+}
+
+.strategy {
+  position: relative;
+  width: 30vw;
+  transform: perspective(900px) rotateX(45deg);
+  height: 50vw;
+  top: -3vw;
+  left: 35vw;
+  z-index: -100000;
+  border: 1px solid black;
+}
+
+.text10 {
+  font-size: 5vw;
+}
+
+.tatics {
+  color: green;
+  font-weight: bolder;
+
+  background-image: linear-gradient(to right, green, skyblue);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.map {
+  text-align: center;
+  height: 500px;
+  position: absolute;
+}
+
+.whole {
+  position: absolute;
+  margin: 10vh 30%;
+  /* text-align: center; */
+}
+
+.back1 {
+  background-image: url("https://t4.ftcdn.net/jpg/01/30/41/43/360_F_130414382_O4tDxNpAVIBnCwOzI6YT3fiPSplEHbLW.jpg");
+  background-size: cover;
+}
+
+.tex1,
+.conte1 .to1 {
+  /* background-color: aqua; */
+  /* display: grid; */
+  /* place-items: center; */
+  /* align-content: center; */
+  min-height: 50vh;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 2s;
+  /* display: flex; */
+}
+
+.hidden1 {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(0%);
+  transition: all 3s;
+  /* display: flex; */
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0%);
+}
+
+.conte1 {
+  width: 50vw;
+  text-align: right;
+  position: right;
+  margin: -10% 0;
+  /* top: 30vhh; */
+}
+
+.pic1 {
+  display: flex;
+}
+
+.ta {
+  display: flex;
+}
+
+.card {
+  background-color: none;
+  top: -7.1vw;
+}
+
+.gogo {
+  margin-bottom: 30vw;
+}
