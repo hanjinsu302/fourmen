@@ -796,7 +796,11 @@ h1, h2, h3, h4, h5,
       width: 100%; }
 
 .video-media {
+  height:370px;
   position: relative; }
+  .video-media img{
+    height:370px;
+  }
   .video-media:before {
     position: absolute;
     content: "";
