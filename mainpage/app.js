@@ -56,7 +56,6 @@ app.get("/index/tottenum", function (req, res) {
   res.render("tottenum.ejs");
 });
 
-
 app.listen(port, () => {
   console.log(port + " is open!");
 });
