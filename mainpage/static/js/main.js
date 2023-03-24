@@ -5,10 +5,39 @@
  });
 
 jQuery(document).ready(function($) {
-
 	"use strict";
 
-	
+	var clickteam = function(){
+		
+		$('#teamlist').on('click', function(e) {
+			console.log('click!!!');
+			$( '.logo-slide-body' ).slideToggle("slow");
+		});
+	};
+	clickteam();
+
+	var siteCountDown = function() {
+
+		$('#date-countdown, #date-countdown2').countdown('2023/8/12', function(event) {
+		  var $this = $(this).html(event.strftime(''
+		    + '<span class="countdown-block"><span class="label">%w</span> weeks </span>'
+		    + '<span class="countdown-block"><span class="label">%d</span> days </span>'
+		    + '<span class="countdown-block"><span class="label">%H</span> hr </span>'
+		    + '<span class="countdown-block"><span class="label">%M</span> min </span>'
+		    + '<span class="countdown-block"><span class="label">%S</span> sec</span>'));
+		});
+				
+	};
+	siteCountDown();
+
+	var siteDatePicker = function() {
+
+		if ( $('.datepicker').length > 0 ) {
+			$('.datepicker').datepicker();
+		}
+
+	};
+	siteDatePicker();
 
 	var siteMenuClone = function() {
 
@@ -120,7 +149,7 @@ jQuery(document).ready(function($) {
     $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
       " - $" + $( "#slider-range" ).slider( "values", 1 ) );
 	};
-	// siteSliderRange();
+	//siteSliderRange();
 
 
 	
@@ -251,28 +280,7 @@ jQuery(document).ready(function($) {
 	};
 	siteStellar();
 
-	var siteCountDown = function() {
-
-		$('#date-countdown, #date-countdown2').countdown('2023/8/12', function(event) {
-		  var $this = $(this).html(event.strftime(''
-		    + '<span class="countdown-block"><span class="label">%w</span> weeks </span>'
-		    + '<span class="countdown-block"><span class="label">%d</span> days </span>'
-		    + '<span class="countdown-block"><span class="label">%H</span> hr </span>'
-		    + '<span class="countdown-block"><span class="label">%M</span> min </span>'
-		    + '<span class="countdown-block"><span class="label">%S</span> sec</span>'));
-		});
-				
-	};
-	siteCountDown();
-
-	var siteDatePicker = function() {
-
-		if ( $('.datepicker').length > 0 ) {
-			$('.datepicker').datepicker();
-		}
-
-	};
-	siteDatePicker();
+	
 
 	var siteSticky = function() {
 		$(".js-sticky-header").sticky({topSpacing:0});
@@ -315,11 +323,11 @@ jQuery(document).ready(function($) {
 
   };
 	siteScroll();
+	console.log('ready!!!');
+
 	
-	
-	$("document").ready(function() {
-		var player = document.getElementById('background-video');
-		player.volume =20;
-	  }); 
+  	
+
+
 
 });
