@@ -1,0 +1,61 @@
+
+.bpcard,
+.bpcard:before,
+.bpcard:after{
+  box-sizing:inherit;
+  padding: 0;
+  margin: 0;
+}
+  
+.bpcard{ 
+  display: flex;
+  
+  padding: 0 10px;
+  box-sizing: border-box;
+  height: 100vh;
+}
+.bpcard .menu__container{
+  width: 200px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20vh;
+  margin-bottom:50px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow:0 10px 40px 2px rgba(0,0,0,0.4);
+  background: white;
+  transform-origin: center center 0px;
+  transition: all .5s ease-out;
+  animation-name: animate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transform: perspective(1000px) rotateX(35deg) rotateY(4deg) rotateZ(-30deg);
+  z-index: 5;
+  
+}
+.bpcard .menu__container:hover{
+    animation: unset;
+    margin-top:18vh;
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+.bpcard .menu__container .menu{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    max-width:100%;
+    height:100%;
+    color: black;
+    
+}
+@keyframes animate{
+    0%{
+        margin-top:20vh;
+    }
+    50%{
+    margin-top:18vh;
+    }
+    100%{
+    margin-top:20vh;
+    }
+}
