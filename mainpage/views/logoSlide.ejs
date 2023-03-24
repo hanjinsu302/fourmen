@@ -1,60 +1,6 @@
-<!DOCTYPE html>
-<html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>swiper</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <style>
-        :root {
-        --swiper-navigation-size: 30px;
-      }
 
-      .swiper {
-        min-width: 1000px;
-        height: 50px;
-        margin-top: 20px;
-      }
-      .swiper-wrapper {
-        height: 100%;
-        position: relative;
-        z-index: 1;
-      }
-      .swiper-slide {
-        width: 200px;
-        height: 100%;
-        margin : 8px;
-        text-align: center;
-        overflow:visible;
-        position: relative;
-        bottom: 7px;
-      }
-      .swiper-button-prev,
-      .swiper-button-next {
-        color: black;
-        opacity: 0.2;
-        
-      }
-      .swiper-wrapper .swiper-slide img {
-        min-width: 40px;
-        height: 40px;
-        z-index: 10;
-      }
-      .swiper-wrapper img:hover {
-        transform: scale(1.2);
-      }
-      .swiper-scrollbar {
-        opacity: 0.5;
-      }
 
-    </style>
-  </head>
-  <body class="logo-slide-body"> 
+  <div class="logo-slide-body" > 
     <div class="swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide" id="manchester-united">
@@ -166,21 +112,5 @@
       <!-- 스크롤바 -->
       <div class="swiper-scrollbar"></div>
     </div>
-    <script>
-      const swiper = new Swiper(".swiper", {
-        loop: true,
-        slidesPerView: 16,
-        autoplay: true,
-        mousewheel: true,
-        speed: 500,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        scrollbar: {
-          el: ".swiper-scrollbar",
-        },
-      });
-    </script>
-  </body>
-</html>
+    
+</div>
