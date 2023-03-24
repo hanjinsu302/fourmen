@@ -6,7 +6,8 @@
 
   <body>
     <header class="site-navbar py-4" role="banner">
-      <%- include('header') %>
+      <div style="position: relative; bottom: 25px;"><%- include('logoSlide')%></div>
+      <div style="position: relative; bottom: 80px;"><%- include('header') %></div>
     </header>
     <div class="site-wrap">
       <div class="site-mobile-menu site-navbar-target">
@@ -45,6 +46,10 @@
 
       <div class="view_t" style="height: 100vh">
         <%- include('totteumview'); %>
+      </div>
+
+      <div class="player-list" style="height: 2000px">
+        <%- include('playerListTottenham');%>
       </div>
 
       <div class="site-section bg-dark">
