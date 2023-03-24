@@ -1,0 +1,39 @@
+  .logo-slide-body {
+    --swiper-navigation-size: 30px;
+  }
+
+  .logo-slide-body .swiper {
+    height: 50px;
+    margin-top: 20px;
+  }
+  .logo-slide-body .swiper-wrapper {
+    height: 100%;
+    position: relative;
+    z-index: 1;
+  }
+  .logo-slide-body .swiper-slide {
+    width: 200px;
+    height: 100%;
+    margin : 8px;
+    text-align: center;
+    overflow:visible;
+    position: relative;
+    bottom: 7px;
+  }
+  .logo-slide-body .swiper-button-prev,
+  .logo-slide-body .swiper-button-next {
+    color: black;
+    opacity: 0.2;
+    
+  }
+  .logo-slide-body .swiper-wrapper .swiper-slide img {
+    min-width: 40px;
+    height: 40px;
+    z-index: 10;
+  }
+  .logo-slide-body .swiper-wrapper img:hover {
+    transform: scale(1.2);
+  }
+  .logo-slide-body .swiper-scrollbar {
+    opacity: 0.5;
+  }
