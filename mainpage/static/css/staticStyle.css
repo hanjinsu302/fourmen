@@ -7,16 +7,6 @@
   background-color: #222832;
 }
 
-.tatics1 {
-  color: white;
-  font-weight: bolder;
-
-  background-image: linear-gradient(to right, blue, skyblue);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
 .body1 {
   border: 1px solid black;
   display: flex;
@@ -596,4 +586,19 @@
 
 .logo321 {
   width: 5vw;
+}
+
+.hero.overlay:before {
+  background-image: url("../images/mathimg.png");
+  background-size: 100%;
+}
+
+.tatics1 {
+  color: white;
+  font-weight: bolder;
+
+  background-image: linear-gradient(to right, white, skyblue);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
