@@ -473,7 +473,7 @@
 }
 
 .whole {
-  top: 60vw;
+  top: 61.5vw;
   position: absolute;
 }
 
@@ -496,7 +496,7 @@
   color: green;
   font-weight: bolder;
 
-  background-image: linear-gradient(to right, green, skyblue);
+  background-image: linear-gradient(to right, yellow, skyblue);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -595,10 +595,30 @@
 
 .tatics1 {
   color: white;
-  font-weight: bolder;
+  font-weight: bold;
 
   background-image: linear-gradient(to right, white, skyblue);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+}
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Single+Day&display=swap");
+.back1 {
+  background-image: url("https://images.rawpixel.com/image_1000/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3BmLXMxMjQtYWstNTQyM18zLmpwZw.jpg");
+  background-size: 100%;
+}
+
+.tatics {
+  font-family: "Cedarville Cursive", cursive;
+  font-family: "Single Day", cursive;
+}
+
+h1,
+.h1 {
+  font-size: 3rem;
+}
+
+.col-lg-12 {
+  margin-top: 40vw;
+  background-color: aqua;
 }

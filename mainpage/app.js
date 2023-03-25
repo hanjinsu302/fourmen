@@ -8,6 +8,14 @@ app.use("/static", express.static(__dirname + "/static"));
 
 app.locals.cdata = require("./static/playerList.json"); // player data
 
+app.get("/statics", function (req, res) {
+  res.render("statics.ejs");
+});
+
+app.get("/index/staticsTwo", function (req, res) {
+  res.render("staticsTwo.ejs");
+});
+
 app.get("/", function (request, response) {
   response.render("index");
 });

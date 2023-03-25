@@ -6,7 +6,9 @@
 
   <body>
     <header class="site-navbar py-4" role="banner">
-      <div style="position: relative; bottom: 80px;"><%- include('header') %></div>
+      <div style="position: relative; bottom: 80px">
+        <%- include('header') %>
+      </div>
     </header>
     <div class="site-wrap">
       <div class="site-mobile-menu site-navbar-target">
@@ -90,7 +92,13 @@
                   <p class="mb-5">
                     <span class="d-block">December 20th, 2020</span>
                     <span class="d-block">9:30 AM GMT+0</span>
-                    <strong class="text-primary">New Euro Arena</strong>
+
+                    <strong
+                      href="#"
+                      onclick="window.open('http://localhost:8000/index/staticsTwo')"
+                      class="text-primary"
+                      >Analystics
+                    </strong>
                   </p>
 
                   <div id="date-countdown2" class="pb-1"></div>
@@ -214,7 +222,11 @@
           <div class="owl-4-slider owl-carousel">
             <div class="item">
               <div class="video-media">
-                <img src="/static/images/img_1.jpg" alt="Image" class="img-fluid" />
+                <img
+                  src="/static/images/img_1.jpg"
+                  alt="Image"
+                  class="img-fluid"
+                />
                 <a
                   href="https://youtu.be/GkoKZUBvC9E"
                   class="d-flex play-button align-items-center"
@@ -231,7 +243,11 @@
             </div>
             <div class="item">
               <div class="video-media">
-                <img src="/static/images/img_2.jpg" alt="Image" class="img-fluid" />
+                <img
+                  src="/static/images/img_2.jpg"
+                  alt="Image"
+                  class="img-fluid"
+                />
                 <a
                   href="https://vimeo.com/139714818"
                   class="d-flex play-button align-items-center"
@@ -250,7 +266,11 @@
             </div>
             <div class="item">
               <div class="video-media">
-                <img src="/static/images/img_3.jpg" alt="Image" class="img-fluid" />
+                <img
+                  src="/static/images/img_3.jpg"
+                  alt="Image"
+                  class="img-fluid"
+                />
                 <a
                   href="https://vimeo.com/139714818"
                   class="d-flex play-button align-items-center"
@@ -268,7 +288,11 @@
 
             <div class="item">
               <div class="video-media">
-                <img src="/static/images/img_1.jpg" alt="Image" class="img-fluid" />
+                <img
+                  src="/static/images/img_1.jpg"
+                  alt="Image"
+                  class="img-fluid"
+                />
                 <a
                   href="https://vimeo.com/139714818"
                   class="d-flex play-button align-items-center"
@@ -285,7 +309,11 @@
             </div>
             <div class="item">
               <div class="video-media">
-                <img src="/static/images/img_2.jpg" alt="Image" class="img-fluid" />
+                <img
+                  src="/static/images/img_2.jpg"
+                  alt="Image"
+                  class="img-fluid"
+                />
                 <a
                   href="https://vimeo.com/139714818"
                   class="d-flex play-button align-items-center"
@@ -304,7 +332,11 @@
             </div>
             <div class="item">
               <div class="video-media">
-                <img src="/static/images/img_3.jpg" alt="Image" class="img-fluid" />
+                <img
+                  src="/static/images/img_3.jpg"
+                  alt="Image"
+                  class="img-fluid"
+                />
                 <a
                   href="https://vimeo.com/139714818"
                   class="d-flex play-button align-items-center"
@@ -368,9 +400,6 @@
           </div>
         </div>
       </div>-->
-
-
-
 
       <footer class="footer-section">
         <div class="container">
@@ -446,8 +475,6 @@
       </footer>
     </div>
     <!-- .site-wrap -->
-
-
   </body>
   <%- include('jsinclude') %>
 </html>
