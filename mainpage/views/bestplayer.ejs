@@ -1,14 +1,155 @@
 <link rel="stylesheet" href="/static/css/bestplayer.css" />
 
-<div class= "menu__container">
-    <div class="menu"><image style="width:90%;" src="/static/images/Chelsea_FC_Logo.svg.png"></image></div>
+
+<div class = "slideshow-container swiper-container" id="bpswiper" style="display:flex">
+    <div class = "mySlides swiper-wrapper">
+        <div class= "menu__container">
+            <div class ="menu">
+                <image style="width:80%;" src="https://resources.premierleague.com/premierleague/badges/50/t1@x2.png" onmouseover="this.style='width:100%;height:100%', this.src='/static/images/menunitedbestplayer.jpeg'" onmouseout="this.style='width:80%; height:auto', this.src='https://resources.premierleague.com/premierleague/badges/50/t1@x2.png'"></image>         
+            </div>
+        </div>
+
+        <div class= "menu__container">
+            <div class="menu"><image style="width:80%;" src="https://resources.premierleague.com/premierleague/badges/50/t14@x2.png" onmouseover="this.style='width:100%;height:100%', this.src='/static/images/riverpoolbestplayer.jpeg'" onmouseout="this.style='width:80%; height:auto', this.src='https://resources.premierleague.com/premierleague/badges/50/t14@x2.png'"></image></div>
+        </div>
+        <div class= "menu__container">
+            <div class="menu"><image style="width:80%;" src="https://resources.premierleague.com/premierleague/badges/50/t43@x2.png" onmouseover="this.style='width:100%;height:100%', this.src='/static/images/mencitybestplayer.jpeg'" onmouseout="this.style='width:80%; height:auto', this.src='https://resources.premierleague.com/premierleague/badges/50/t43@x2.png'"></image></div>
+        </div>
+        <div class= "menu__container">
+            <div class="menu"><image style="width:80%;" src="https://resources.premierleague.com/premierleague/badges/50/t8@x2.png" onmouseover="this.style='width:100%;height:100%', this.src='/static/images/chelseabestplayer.jpeg'" onmouseout="this.style='width:80%; height:auto', this.src='https://resources.premierleague.com/premierleague/badges/50/t8@x2.png'"></image></div>
+        </div>
+    </div>
+    <div class = "mySlides swiper-wrapper" >
+        <div class= "menu__container">
+            <div class="menu"><image style="width:80%;" src="https://resources.premierleague.com/premierleague/badges/50/t3@x2.png"></image></div>
+        </div>
+        <div class= "menu__container">
+            <div class="menu"><image style="width:80%;" src="https://resources.premierleague.com/premierleague/badges/50/t6@x2.png"></image></div>
+        </div>
+        <div class= "menu__container">
+            <div class="menu"><image style="width:80%;" src="https://resources.premierleague.com/premierleague/badges/50/t4@x2.png"></image></div>
+        </div>
+        <div class= "menu__container">
+            <div class="menu"><image style="width:80%;" src="https://resources.premierleague.com/premierleague/badges/50/t11@x2.png"></image></div>
+        </div>
+    </div>
+    <div class = "mySlides swiper-wrapper" >
+        <div class= "menu__container">
+            <div class="menu"><image style="width:80%;" src="https://resources.premierleague.com/premierleague/badges/50/t21@x2.png"></image></div>
+        </div>
+        <div class= "menu__container">
+            <div class="menu"><image style="width:80%;" src="https://resources.premierleague.com/premierleague/badges/50/t36@x2.png"></image></div>
+        </div>
+        <div class= "menu__container">
+            <div class="menu"><image style="width:80%;" src="https://resources.premierleague.com/premierleague/badges/50/t31@x2.png"></image></div>
+        </div>
+        <div class= "menu__container">
+            <div class="menu"><image style="width:80%;" src="https://resources.premierleague.com/premierleague/badges/50/t2@x2.png"></image></div>
+        </div>
+    </div>
+    <div class = "mySlides swiper-wrapper" >
+        <div class= "menu__container">
+            <div class="menu"><image style="width:80%;" src="https://resources.premierleague.com/premierleague/badges/50/t54@x2.png"></image></div>
+        </div>
+        <div class= "menu__container">
+            <div class="menu"><image style="width:80%;" src="https://resources.premierleague.com/premierleague/badges/50/t17@x2.png"></image></div>
+        </div>
+        <div class= "menu__container">
+            <div class="menu"><image style="width:80%;" src="https://resources.premierleague.com/premierleague/badges/50/t39@x2.png"></image></div>
+        </div>
+        <div class= "menu__container">
+            <div class="menu"><image style="width:80%;" src="https://resources.premierleague.com/premierleague/badges/50/t13@x2.png"></image></div>
+        </div>
+    </div>
+    <div class = "mySlides swiper-wrapper" >
+        <div class= "menu__container">
+            <div class="menu"><image style="width:80%;" src="https://resources.premierleague.com/premierleague/badges/50/t94@x2.png"></image></div>
+        </div>
+        <div class= "menu__container">
+            <div class="menu"><image style="width:80%;" src="https://resources.premierleague.com/premierleague/badges/50/t13@x2.png"></image></div>
+        </div>
+        <div class= "menu__container">
+            <div class="menu"><image style="width:80%;" src="https://resources.premierleague.com/premierleague/badges/50/t20@x2.png"></image></div>
+        </div>
+        <div class= "menu__container">
+            <div class="menu"><image style="width:80%;" src="https://resources.premierleague.com/premierleague/badges/50/t91@x2.png"></image></div>
+        </div>
+    </div>
+    <script>
+        // Next/previous controls
+        function moveSlides(n) {
+            console.log('moveSlides')
+            slideIndex = slideIndex + n
+            showSlides(slideIndex);
+        alert(slideIndex);
+        };
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            slideIndex = n;
+            showSlides(slideIndex);
+        };
+
+        function showSlides(n) {
+            console.log("4");
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        var size = slides.length;
+
+        if ((n+1) > size) {
+            slideIndex = 0; n = 0;
+        }else if (n < 0) {
+            slideIndex = (size-1);
+            n = (size-1);
+        };
+
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        };
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        };
+
+        slides[n].style.display = "flex";
+        dots[n].className += " active";
+        };
+    </script>
+    <!-- <a class="prev" onclick="moveSlides(-1)">&#10094;</a>
+    <a class="next" onclick="moveSlides(1)">&#10095;</a> -->
 </div>
-<div class= "menu__container">
-    <div class="menu"><image style="width:90%;" src="/static/images/img.png"></image></div>
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(0)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
 </div>
-<div class= "menu__container">
-    <div class="menu"><image style="width:90%;" src="/static/images/spurs-blue-no-text-300x300.png"></image></div>
-</div>
-<div class= "menu__container">
-    <div class="menu"><image style="width:90%;" src="/static/images/Mahchester_logo.png"></image></div>
-</div>
+
+<script>
+    var slideIndex = 0; //slide index
+
+// HTML 로드가 끝난 후 동작
+window.onload=function(){
+  showSlides(slideIndex);
+    
+ // Auto Move Slide
+//   var sec = 4000;
+//   setInterval(function(){
+//     console.log(slideIndex);
+//     slideIndex++;
+//     showSlides(slideIndex);
+
+//   }, sec);
+  
+};
+
+
+// Next/previous controls
+
+
+
+
+
+</script>
+
+
