@@ -1,8 +1,6 @@
 .body_player {
   position: relative;
-  background-color: #131325;
-  height: 2000px;
-}
+  background-color: #131325;}
 .container {
   position: relative;
   top: 80px;
