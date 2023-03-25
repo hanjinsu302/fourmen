@@ -12,6 +12,10 @@ app.get("/statics", function (req, res) {
   res.render("statics.ejs");
 });
 
+app.get("/staticsTwo", function (req, res) {
+  res.render("staticsTwo.ejs");
+});
+
 app.get("/index/staticsTwo", function (req, res) {
   res.render("staticsTwo.ejs");
 });
