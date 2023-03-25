@@ -48,16 +48,10 @@ $view.on("click", function (e) {
         ],
       };
     },
-    // created(){
-    // 	this.getAverage();
-    // },
     mounted() {
       this.drawGraph();
     },
     methods: {
-      // getAverage(){	// 평균값 구하기
-      // 	this.average = `${Math.round(this.graphData.reduce((cur,pre)=>cur*1+pre*1)/6*100)/100}%`
-      // },
       graphDataInput(event, i) {
         // input 입력시 동작
         event.target.value = event.target.value.replace(/[^0-9]/g, "");
@@ -154,30 +148,6 @@ $view.on("click", function (e) {
           ctx.stroke();
         }
 
-        // 각 지표 동그라미 그리기
-        // function drawCircles(ctx, center, r, size){
-        //   for (let i = 0; i < 6; i++) {
-        //     ctx.beginPath();
-        //     ctx.arc(center + r * Math.cos(Math.PI/3*i - Math.PI/2),
-        //     	center + r * Math.sin(Math.PI/3*i - Math.PI/2),
-        //       size, 0, Math.PI*2);
-        //     ctx.closePath();
-        //     ctx.fillStyle = "#b0b0b0";
-        //     ctx.fill();
-
-        //     ctx.beginPath();
-        //     ctx.fillStyle = "#fff";
-        //     ctx.font = '20px san-serif';
-        //     ctx.fillText(
-        //     	`${Object.keys(player)[i+4]}`,
-        //     	center + r * Math.cos(Math.PI/3*i - Math.PI/2) - size/2 + 4.5,
-        //     	center + r * Math.sin(Math.PI/3*i - Math.PI/2) + size/2 - 3.5
-        //     );
-        //     ctx.fill();
-        //     ctx.closePath();
-        //   }
-        // }
-
         // 각 태그 그리기
         function drawTags(ctx, r, center, average) {
           ctx.fillStyle = "#fff";
@@ -267,27 +237,3 @@ document.addEventListener("keydown", function (e) {
     $body.removeClass("modal-active");
   }
 });
-
-// // info career 간 이동
-// var $infoBtn = $(".btn .info-btn"),
-//   $careerBtn = $(".btn .career-btn"),
-//   $modalContainerCareer = $("#modal-container-career")
-//   $close = $(".close-career");
-
-// $careerBtn.on("click", function () {
-//   $modalContainer.addClass("out");
-//   $body.removeClass("modal-active").addClass("modal-active-career");
-//   $modalContainerCareer.removeAttr("class").addClass("act");
-// });
-// // x 클릭시 닫음
-// $close.on("click", function () {
-//   $modalContainerCareer.addClass("out");
-//   $body.removeClass("modal-active-career");
-// });
-// // esc 누를시 닫음
-// document.addEventListener("keydown", function (e) {
-//   if (e.keyCode == 27) {
-//     $modalContainerCareer.addClass("out");
-//     $body.removeClass("modal-active-career");
-//   }
-// });
