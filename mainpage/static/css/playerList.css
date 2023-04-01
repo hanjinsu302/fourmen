@@ -73,8 +73,6 @@
   animation: playerTurn 5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  /* transform: rotateY(180deg);
-  transition-duration: 1s; */
   box-shadow: -10px 10px 10px 2px rgba(0, 0, 0, 0.2), -2px 0px 0px 0px #888;
   transition: all 0.5s;
   transition-delay: 0.05s;
@@ -244,8 +242,6 @@ body.modal-active {
   cursor: pointer;
   transform: rotate(180deg);
   transition-duration: 1.5s;
-}
-#modal-container .modal-background .modal .close i {
 }
 #modal-container .modal-background .modal .btn {
   position: relative;
