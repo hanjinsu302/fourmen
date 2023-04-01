@@ -5,7 +5,7 @@
 ### front-end 기술만 활용해서 만든 페이지이기 때문에 기능이 별로 없지만 최대한 비주얼적으로 멋있게 만들어 보고자 했다.
 ## 2. 사진
 ### main page
-### <img width="1798" alt="img" src='https://github.com/junbum766/fourmen/blob/jun/img/index.png?raw=true'>
+### <img width="1798" alt="img" src='https://github.com/junbum766/fourmen/blob/main/img/index.png?raw=true'>
 ### 토트넘 page
-### <img width="1798" alt="img" src='https://github.com/junbum766/fourmen/blob/jun/img/tottenham.png?raw=true'>
+### <img width="1798" alt="img" src='https://github.com/junbum766/fourmen/blob/main/img/tottenham.png?raw=true'>
 ## 3. 파트 기술 detail
