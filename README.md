@@ -6,7 +6,7 @@
 ## 2. 사진
 ### main page
 ### <img width="1798" alt="img" src='https://github.com/junbum766/fourmen/blob/jun/img/index.png?raw=true'>
-### <img width="1798" alt="img" src='https://github.com/junbum766/fourmen/blob/jun/img/index.png?raw=true'>
+### <img width="1798" alt="img" src='https://github.com/junbum766/fourmen/blob/jun/img/tottenham.png?raw=true'>
 ### 토트넘 page
 ###
 ## 3. 파트 기술 detail
