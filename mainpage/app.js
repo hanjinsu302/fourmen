@@ -69,5 +69,5 @@ app.get("/index/tottenum", function (req, res) {
 });
 
 app.listen(port, () => {
-  console.log(port + " is open!");
+  console.log(`http://localhost:${port}`);
 });
