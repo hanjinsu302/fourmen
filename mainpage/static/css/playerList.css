@@ -1,8 +1,6 @@
 .body_player {
   position: relative;
-  background-color: #131325;
-  height: 2000px;
-}
+  background-color: #131325;}
 .container {
   position: relative;
   top: 80px;
@@ -31,7 +29,7 @@
   overflow: hidden;
 }
 .list .card {
-  min-width: 550px;
+  min-width: 80%;
   margin-bottom: 10px;
   perspective: 600px;
   transition: all 0.1s;
@@ -39,6 +37,20 @@
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   height: 90px;
+}
+.list .card .career {
+  display: none;
+}
+.list .card.open .career {
+  position: relative;
+  top: 20px;
+  right: 20px;
+  display: block;
+}
+.list .card .career ul {
+}
+.list .card .career li {
+  color: gray;
 }
 .list .card .bottom {
   height: 0px;

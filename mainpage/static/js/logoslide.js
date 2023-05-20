@@ -1,7 +1,8 @@
 
       const swiper = new Swiper(".swiper", {
         loop: true,
-        slidesPerView: 16,
+        loopAdditionalSlides: 1,
+        slidesPerView: 5,
         autoplay: true,
         mousewheel: true,
         speed: 300,

@@ -1,12 +1,24 @@
 const express = require("express");
 const app = express();
 
-const port = 1234;
+const port = 8001;
 app.set("view engine", "ejs");
 app.set("/view", "views");
 app.use("/static", express.static(__dirname + "/static"));
 
-app.locals.cdata = require('./static/playerList.json') // player data
+app.locals.cdata = require("./static/playerList.json"); // player data
+
+app.get("/statics", function (req, res) {
+  res.render("statics.ejs");
+});
+
+app.get("/staticsTwo", function (req, res) {
+  res.render("staticsTwo.ejs");
+});
+
+app.get("/index/staticsTwo", function (req, res) {
+  res.render("staticsTwo.ejs");
+});
 
 app.get("/", function (request, response) {
   response.render("index");
@@ -55,7 +67,6 @@ app.get("/tottenum", function (req, res) {
 app.get("/index/tottenum", function (req, res) {
   res.render("tottenum.ejs");
 });
-
 
 app.listen(port, () => {
   console.log(port + " is open!");

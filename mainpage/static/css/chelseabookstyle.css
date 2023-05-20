@@ -6,7 +6,7 @@
   /* --background: #e2e2f5; */
   --perspective: 1800px;
   --transition: transform 1s 0.2s, z-index 0s 0.5s;
-  --yellow: #ffce14;
+  --yellow: #ffffff;
 }
 
 .slidebook_c .pages_page {
@@ -3267,7 +3267,7 @@
   transform: rotateY(180deg);
 }
 .slidebook_c .pages_page:nth-of-type(1) .pages_page__inner {
-  background-size: 880px !important;
+  background-size: 1200px !important;
   background-position: center !important;
   background: url("https://img.chelseafc.com//image/upload/f_auto,c_fill,g_faces,w_1440,h_856,q_90/editorial/match-reports/2022-23/Leeds%20home/fofana-celebs-leeds-h.jpg");
 }
@@ -3277,7 +3277,7 @@
   background: url("https://img.chelseafc.com//image/upload/f_auto,c_fill,g_faces,w_1440,h_856,q_90/editorial/match-reports/2022-23/Dortmund%20home/james-shirt-dortmund-dressing-room.jpg");
 }
 .slidebook_c .pages_page:nth-of-type(2) .pages_page__inner h4 {
-  color: black;
+  color: rgb(255, 255, 255);
   z-index: 3;
 }
 .slidebook_c .pages_page:nth-of-type(3) .pages_page__inner {
@@ -3315,7 +3315,7 @@
 }
 .slidebook_c .pages_page:nth-of-type(5) .pages_page__inner {
   background: url("https://img.chelseafc.com//image/upload/f_auto,c_fill,g_faces,w_1440,h_856,q_90/The%205th%20Stand%20app%20editorial/Training%20galleries/2023/February/22%20Feb/DAZ_7014.jpg");
-  background-size: 870px !important;
+  background-size: 1200px !important;
   background-position: center !important;
 }
 .slidebook_c .pages_page:nth-of-type(7) .pages_page__inner {

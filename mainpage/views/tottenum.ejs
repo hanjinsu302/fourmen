@@ -6,7 +6,9 @@
 
   <body>
     <header class="site-navbar py-4" role="banner">
-      <div style="position: relative; bottom: 80px;"><%- include('header') %></div>
+      <div style="position: relative; bottom: 80px">
+        <%- include('header') %>
+      </div>
     </header>
     <div class="site-wrap">
       <div class="site-mobile-menu site-navbar-target">
@@ -31,29 +33,61 @@
               <h1 class="text-white">TOTTENHAM</h1>
 
               <p>
-                <a href="#" class="btn btn-primary py-3 px-4 mr-3">Players</a>
-                <a href="#" class="more light">Learn More</a>
+                <a
+                  href="#magazine"
+                  class="btn py-3 px-4 mr-3"
+                  style="background-color: white; color: black; margin: 5px"
+                  >Magazine</a
+                >
+                <a
+                  href="#photo"
+                  class="more light py-3 px-4 mr-3"
+                  style="margin: 5px"
+                  >Photo</a
+                >
+                <a
+                  href="#team"
+                  class="more light py-3 px-4 mr-3"
+                  style="margin: 5px"
+                  >Team</a
+                >
+                <a
+                  href="#match"
+                  class="more light py-3 px-4 mr-3"
+                  style="margin: 5px"
+                  >Match</a
+                >
+                <a
+                  href="#developer"
+                  class="more light py-3 px-4 mr-3"
+                  style="margin: 5px"
+                  >Developer</a
+                >
               </p>
             </div>
           </div>
         </div>
       </div>
 
+      <a name="magazine"></a>
       <div class="slidebook_t" style="height: 100vh">
         <%- include('totteumslidebook'); %>
       </div>
 
+      <a name="photo"></a>
       <div class="view_t" style="height: 100vh">
         <%- include('totteumview'); %>
       </div>
 
+      <a name="team"></a>
       <div class="player-list" style="height: 2000px">
         <%- include('playerListTottenham');%>
       </div>
 
+      <a name="match"></a>
       <div class="site-section bg-dark">
         <div class="container">
-          <div class="row">
+          <div class="row" style="position: relative; bottom: 100px">
             <div class="col-lg-6">
               <div class="widget-next-match">
                 <div class="widget-title">
@@ -90,7 +124,13 @@
                   <p class="mb-5">
                     <span class="d-block">December 20th, 2020</span>
                     <span class="d-block">9:30 AM GMT+0</span>
-                    <strong class="text-primary">New Euro Arena</strong>
+                    <strong
+                      href="#"
+                      onclick="window.open('http://115.85.183.123:8000/staticsTwo')"
+                      class="text-primary"
+                      style="cursor: pointer;"
+                      >Analystics</strong
+                    >
                   </p>
 
                   <div id="date-countdown2" class="pb-1"></div>
@@ -139,10 +179,15 @@
                       <td>6</td>
                       <td>50</td>
                     </tr>
-                    <tr>
+                    <tr
+                      style="
+                        background-color: rgba(255, 255, 255, 0.3);
+                        color: black;
+                      "
+                    >
                       <td>4</td>
                       <td>
-                        <strong class="text-white">TOTTENHAM</strong>
+                        <strong class="text-black">TOTTENHAM</strong>
                       </td>
                       <td>15</td>
                       <td>4</td>
@@ -183,6 +228,22 @@
                       <td>5</td>
                       <td>42</td>
                     </tr>
+                    <tr>
+                      <td>9</td>
+                      <td><strong class="text-white">FULHAM</strong></td>
+                      <td>11</td>
+                      <td>6</td>
+                      <td>10</td>
+                      <td>39</td>
+                    </tr>
+                    <tr>
+                      <td>10</td>
+                      <td><strong class="text-white">CHELSEA</strong></td>
+                      <td>10</td>
+                      <td>8</td>
+                      <td>9</td>
+                      <td>38</td>
+                    </tr>
                   </tbody>
                 </table>
               </div>
@@ -196,7 +257,7 @@
         <div class="container">
           <div class="row">
             <div class="col-6 title-section">
-              <h2 class="heading">Tottenum Highlight</h2>
+              <h2 class="heading">Tottenham Highlight</h2>
             </div>
             <div class="col-6 text-right">
               <div class="custom-nav">
@@ -214,9 +275,13 @@
           <div class="owl-4-slider owl-carousel">
             <div class="item">
               <div class="video-media">
-                <img src="/static/images/img_1.jpg" alt="Image" class="img-fluid" />
+                <img
+                  src="/static/images/tottenhamhighlight1.jpg"
+                  alt="Image"
+                  class="img-fluid"
+                />
                 <a
-                  href="https://youtu.be/GkoKZUBvC9E"
+                  href="https://www.youtube.com/watch?v=VYL_SZzHdxs"
                   class="d-flex play-button align-items-center"
                   data-fancybox
                 >
@@ -224,16 +289,20 @@
                     <span class="icon-play"></span>
                   </span>
                   <div class="caption">
-                    <h3 class="m-0">Dogba set for Juvendu return?</h3>
+                    <h3 class="m-0">TOTTENHAM HOTSPUR 4-3 LEEDS UNITED</h3>
                   </div>
                 </a>
               </div>
             </div>
             <div class="item">
               <div class="video-media">
-                <img src="/static/images/img_2.jpg" alt="Image" class="img-fluid" />
+                <img
+                  src="/static/images/tottenhamhighlight2.jpg"
+                  alt="Image"
+                  class="img-fluid"
+                />
                 <a
-                  href="https://vimeo.com/139714818"
+                  href="https://youtu.be/7bHGhQdlW0A"
                   class="d-flex play-button align-items-center"
                   data-fancybox
                 >
@@ -242,7 +311,7 @@
                   </span>
                   <div class="caption">
                     <h3 class="m-0">
-                      Kai Nets Double To Secure Comfortable Away Win
+                      Match Highlights: Crystal Palace 0-4 Tottenham Hotspur
                     </h3>
                   </div>
                 </a>
@@ -250,9 +319,13 @@
             </div>
             <div class="item">
               <div class="video-media">
-                <img src="/static/images/img_3.jpg" alt="Image" class="img-fluid" />
+                <img
+                  src="/static/images/tottenhamhighlight3.jpg"
+                  alt="Image"
+                  class="img-fluid"
+                />
                 <a
-                  href="https://vimeo.com/139714818"
+                  href="https://youtu.be/6oZ3Nex5TFw"
                   class="d-flex play-button align-items-center"
                   data-fancybox
                 >
@@ -260,7 +333,7 @@
                     <span class="icon-play"></span>
                   </span>
                   <div class="caption">
-                    <h3 class="m-0">Romolu to stay at Real Nadrid?</h3>
+                    <h3 class="m-0">[손흥민 스페셜 하이라이트]</h3>
                   </div>
                 </a>
               </div>
@@ -268,9 +341,13 @@
 
             <div class="item">
               <div class="video-media">
-                <img src="/static/images/img_1.jpg" alt="Image" class="img-fluid" />
+                <img
+                  src="/static/images/tottenhamhighlight4.jpg"
+                  alt="Image"
+                  class="img-fluid"
+                />
                 <a
-                  href="https://vimeo.com/139714818"
+                  href="https://youtu.be/G0P--C2cMR8"
                   class="d-flex play-button align-items-center"
                   data-fancybox
                 >
@@ -278,16 +355,20 @@
                     <span class="icon-play"></span>
                   </span>
                   <div class="caption">
-                    <h3 class="m-0">Dogba set for Juvendu return?</h3>
+                    <h3 class="m-0">"10위에서 4위로" -토트넘의 기적</h3>
                   </div>
                 </a>
               </div>
             </div>
             <div class="item">
               <div class="video-media">
-                <img src="/static/images/img_2.jpg" alt="Image" class="img-fluid" />
+                <img
+                  src="/static/images/tottenhamhighlight5.jpg"
+                  alt="Image"
+                  class="img-fluid"
+                />
                 <a
-                  href="https://vimeo.com/139714818"
+                  href="https://youtu.be/SENRJnil-xg"
                   class="d-flex play-button align-items-center"
                   data-fancybox
                 >
@@ -296,7 +377,7 @@
                   </span>
                   <div class="caption">
                     <h3 class="m-0">
-                      Kai Nets Double To Secure Comfortable Away Win
+                      Tottenham Hotspurs 'IMPOSSIBLE Clutch' Moments!
                     </h3>
                   </div>
                 </a>
@@ -304,9 +385,13 @@
             </div>
             <div class="item">
               <div class="video-media">
-                <img src="/static/images/img_3.jpg" alt="Image" class="img-fluid" />
+                <img
+                  src="/static/images/tottenhamhighlight6.jpg"
+                  alt="Image"
+                  class="img-fluid"
+                />
                 <a
-                  href="https://vimeo.com/139714818"
+                  href="https://youtu.be/UAwF5vvphbU"
                   class="d-flex play-button align-items-center"
                   data-fancybox
                 >
@@ -314,7 +399,7 @@
                     <span class="icon-play"></span>
                   </span>
                   <div class="caption">
-                    <h3 class="m-0">Romolu to stay at Real Nadrid?</h3>
+                    <h3 class="m-0">Son Heung Min 's Pass Vision Is So Good</h3>
                   </div>
                 </a>
               </div>
@@ -323,131 +408,11 @@
         </div>
       </div>
 
-      <!--<div class="container site-section">
-        <div class="row">
-          <div class="col-6 title-section">
-            <h2 class="heading">Our Blog</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="custom-media d-flex">
-              <div class="img mr-4">
-                <img src="/static/images/img_1.jpg" alt="Image" class="img-fluid" />
-              </div>
-              <div class="text">
-                <span class="meta">May 20, 2020</span>
-                <h3 class="mb-4">
-                  <a href="#">Romolu to stay at Real Nadrid?</a>
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Possimus deserunt saepe tempora dolorem.
-                </p>
-                <p><a href="#">Read more</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="custom-media d-flex">
-              <div class="img mr-4">
-                <img src="/static/images/img_3.jpg" alt="Image" class="img-fluid" />
-              </div>
-              <div class="text">
-                <span class="meta">May 20, 2020</span>
-                <h3 class="mb-4">
-                  <a href="#">Romolu to stay at Real Nadrid?</a>
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Possimus deserunt saepe tempora dolorem.
-                </p>
-                <p><a href="#">Read more</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>-->
-
-
-
-
-      <footer class="footer-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3">
-              <div class="widget mb-3">
-                <h3>News</h3>
-                <ul class="list-unstyled links">
-                  <li><a href="#">All</a></li>
-                  <li><a href="#">Club News</a></li>
-                  <li><a href="#">Media Center</a></li>
-                  <li><a href="#">Video</a></li>
-                  <li><a href="#">RSS</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-3">
-              <div class="widget mb-3">
-                <h3>Tickets</h3>
-                <ul class="list-unstyled links">
-                  <li><a href="#">Online Ticket</a></li>
-                  <li><a href="#">Payment and Prices</a></li>
-                  <li><a href="#">Contact &amp; Booking</a></li>
-                  <li><a href="#">Tickets</a></li>
-                  <li><a href="#">Coupon</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-3">
-              <div class="widget mb-3">
-                <h3>Matches</h3>
-                <ul class="list-unstyled links">
-                  <li><a href="#">Standings</a></li>
-                  <li><a href="#">World Cup</a></li>
-                  <li><a href="#">La Lega</a></li>
-                  <li><a href="#">Hyper Cup</a></li>
-                  <li><a href="#">World League</a></li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="col-lg-3">
-              <div class="widget mb-3">
-                <h3>Social</h3>
-                <ul class="list-unstyled links">
-                  <li><a href="#">Twitter</a></li>
-                  <li><a href="#">Facebook</a></li>
-                  <li><a href="#">Instagram</a></li>
-                  <li><a href="#">Youtube</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="row text-center">
-            <div class="col-md-12">
-              <div class="pt-5">
-                <p>
-                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                  Copyright &copy;
-                  <script>
-                    document.write(new Date().getFullYear());
-                  </script>
-                  All rights reserved | This template is made with
-                  <i class="icon-heart" aria-hidden="true"></i> by
-                  <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      
+      <a name="developer"></a>
+      <footer class="footer-section"><%- include('footer') %></footer>
     </div>
     <!-- .site-wrap -->
-
-
   </body>
   <%- include('jsinclude') %>
 </html>
